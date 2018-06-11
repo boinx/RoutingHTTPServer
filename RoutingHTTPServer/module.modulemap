@@ -1,0 +1,8 @@
+// This custom module map is required to rename the umbrella header (there is alredy a header with the original name of
+// the module...)
+framework module RoutingHTTPServer {
+   umbrella header "RoutingHTTPServerUmbrella.h"
+
+   export *
+   module * { export * }
+}

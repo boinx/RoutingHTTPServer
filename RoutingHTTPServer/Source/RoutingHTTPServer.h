@@ -1,7 +1,10 @@
-#import <Foundation/Foundation.h>
-#import "HTTPServer.h"
-#import "RouteRequest.h"
-#import "RouteResponse.h"
+@import Foundation;
+@import CocoaHTTPServer.HTTPServer;
+
+@class RouteRequest;
+@class RouteResponse;
+@class HTTPMessage;
+@class HTTPConnection;
 
 typedef void (^RequestHandler)(RouteRequest *request, RouteResponse *response);
 

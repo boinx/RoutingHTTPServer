@@ -1,5 +1,5 @@
-#import <Foundation/Foundation.h>
-#import "HTTPResponse.h"
+@import Foundation;
+@import CocoaHTTPServer.HTTPResponse;
 
 // Wraps an HTTPResponse object to allow setting a custom status code
 // without needing to create subclasses of every response.

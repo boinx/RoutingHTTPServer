@@ -1,9 +1,7 @@
 #import "RouteResponse.h"
-#import "HTTPConnection.h"
-#import "HTTPDataResponse.h"
-#import "HTTPFileResponse.h"
-#import "HTTPAsyncFileResponse.h"
 #import "HTTPResponseProxy.h"
+
+@import CocoaHTTPServer;
 
 @implementation RouteResponse {
 	NSMutableDictionary *headers;

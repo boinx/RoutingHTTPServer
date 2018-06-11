@@ -1,7 +1,8 @@
-#import <Foundation/Foundation.h>
-#import "HTTPResponse.h"
+@import Foundation;
+
 @class HTTPConnection;
 @class HTTPResponseProxy;
+@protocol HTTPResponse;
 
 @interface RouteResponse : NSObject
 

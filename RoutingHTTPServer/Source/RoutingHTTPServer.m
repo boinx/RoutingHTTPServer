@@ -1,6 +1,8 @@
 #import "RoutingHTTPServer.h"
 #import "RoutingConnection.h"
 #import "Route.h"
+#import "RouteResponse.h"
+#import "RouteRequest.h"
 
 @implementation RoutingHTTPServer {
 	NSMutableDictionary *routes;
