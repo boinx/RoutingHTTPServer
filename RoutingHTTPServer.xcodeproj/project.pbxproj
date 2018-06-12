@@ -20,6 +20,7 @@
 		4833B24E20CE60B2006BB436 /* HTTPResponseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4833B24220CE60B2006BB436 /* HTTPResponseProxy.m */; };
 		4833B24F20CE60B2006BB436 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 4833B24320CE60B2006BB436 /* Route.m */; };
 		4833B25020CE60B2006BB436 /* RoutingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4833B24420CE60B2006BB436 /* RoutingHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484E78D720CFA99800C8C9E5 /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4833B25620CE61B6006BB436 /* CocoaHTTPServer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484E78D720CFA99800C8C9E5 /* CocoaHTTPServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
