@@ -201,6 +201,11 @@
 	NSMutableArray *methodRoutes = [routes objectForKey:method];
 	if (methodRoutes == nil)
 		return nil;
+  
+    if (params == nil)
+    {
+        params = NSDictionary.new;
+    }
 
 	for (Route *route in methodRoutes) {
 		NSTextCheckingResult *result = [route.regex firstMatchInString:path options:0 range:NSMakeRange(0, path.length)];

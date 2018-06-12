@@ -6,6 +6,8 @@
 @class HTTPMessage;
 @class HTTPConnection;
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef void (^RequestHandler)(RouteRequest *request, RouteResponse *response);
 
 @interface RoutingHTTPServer : HTTPServer
@@ -27,7 +29,7 @@ typedef void (^RequestHandler)(RouteRequest *request, RouteResponse *response);
 - (NSDictionary *)mimeTypes;
 - (void)setMIMETypes:(NSDictionary *)types;
 - (void)setMIMEType:(NSString *)type forExtension:(NSString *)ext;
-- (NSString *)mimeTypeForPath:(NSString *)path;
+- (nullable NSString *)mimeTypeForPath:(NSString *)path;
 
 // Convenience methods. Yes I know, this is Cocoa and we don't use convenience
 // methods because typing lengthy primitives over and over and over again is
@@ -41,6 +43,8 @@ typedef void (^RequestHandler)(RouteRequest *request, RouteResponse *response);
 - (void)handleMethod:(NSString *)method withPath:(NSString *)path target:(id)target selector:(SEL)selector;
 
 - (BOOL)supportsMethod:(NSString *)method;
-- (RouteResponse *)routeMethod:(NSString *)method withPath:(NSString *)path parameters:(NSDictionary *)params request:(HTTPMessage *)request connection:(HTTPConnection *)connection;
+- (nullable RouteResponse *)routeMethod:(NSString *)method withPath:(NSString *)path parameters:(nullable NSDictionary *)params request:(HTTPMessage *)request connection:(nullable HTTPConnection *)connection;
 
 @end
+
+NS_ASSUME_NONNULL_END
