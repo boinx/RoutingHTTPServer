@@ -60,6 +60,10 @@
 	self.response = [[HTTPDataResponse alloc] initWithData:data];
 }
 
+- (void)respondWithRedirect:(NSString *)path {
+    self.response = [[HTTPRedirectResponse alloc] initWithPath:path];
+}
+
 - (void)respondWithFile:(NSString *)path {
 	[self respondWithFile:path async:NO];
 }

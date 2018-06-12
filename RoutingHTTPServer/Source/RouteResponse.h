@@ -19,5 +19,6 @@
 - (void)respondWithData:(NSData *)data;
 - (void)respondWithFile:(NSString *)path;
 - (void)respondWithFile:(NSString *)path async:(BOOL)async;
+- (void)respondWithRedirect:(NSString *)path;
 
 @end
