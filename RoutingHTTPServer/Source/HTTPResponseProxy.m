@@ -24,7 +24,7 @@
 }
 
 // Implement the required HTTPResponse methods
-- (UInt64)contentLength {
+- (NSUInteger)contentLength {
 	if (response) {
 		return [response contentLength];
 	} else {
