@@ -3,7 +3,7 @@
 
 @interface Route : NSObject
 
-@property (nonatomic, assign) NSRegularExpression *regex;
+@property (nonatomic, retain) NSRegularExpression *regex;
 @property (nonatomic, copy) RequestHandler handler;
 
 #if __has_feature(objc_arc_weak)
@@ -13,6 +13,6 @@
 #endif
 
 @property (nonatomic, assign) SEL selector;
-@property (nonatomic, assign) NSArray *keys;
+@property (nonatomic, retain) NSArray *keys;
 
 @end
